@@ -1,6 +1,6 @@
 # Localização (tradução)
 
-A globalização é o design e o desenvolvimento de aplicativos que são executados em várias localizações. Por exemplo, a globalização dá suporte a interfaces do usuário localizadas e a dados regionais para usuários em culturas diferentes. WPF fornece recursos de design globalizados, incluindo layout automático, assemblies satélite e atributos e comentários localizados.
+>A globalização é o design e o desenvolvimento de aplicativos que são executados em várias localizações. Por exemplo, a globalização dá suporte a interfaces do usuário localizadas e a dados regionais para usuários em culturas diferentes. WPF fornece recursos de design globalizados, incluindo layout automático, assemblies satélite e atributos e comentários localizados.
 A localização é a tradução de recursos do aplicativo em versões localizadas para culturas específicas às quais o aplicativo dá suporte.
 [Documentação](https://docs.microsoft.com/pt-br/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)
 
