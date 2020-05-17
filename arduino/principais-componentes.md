@@ -31,13 +31,15 @@ Resistor variável. Permitir regular a resistência de 0 até um determinado lim
 
 ## Capacitor
 
-Ao ser carregado, armazena energia em um campo elétrico. Essa energia é liberada de forma constante, portanto, pode ser utilizado para estabiliar a tensão do circuito.
+Ao ser carregado, armazena energia em um campo elétrico para ser liberada posteriormente. As aplicações vão desde meramente armazenar a carga, agindo como uma espécie de bateria, a estabilizador de tensão em circuitos retificadores, transformando corrente alternada em corrente contínua.
+
+É importante tomar cuidado quando se lida com capacitores, especialmente em circuitos de voltagens mais altas. Mesmo desligados, ainda podem conter carga. Para evitar o risco de um choque elétrico, pode-se fechar um curto dos terminais do capacitor, o que fará com que a carga seja liberada instaneamente.
 
 Há diversos tipos, variando em tamanho e *capacitância* (medida em Farad).
 
 ![Tipos de capacitores](img/capacitores.png)
 
-Alguns capacitores são polarizados, como o eletrolítico. Inverter os pólos causará um curto e o componente pode até estourar. Uma seta indica qual o sentido da corrente.
+Alguns capacitores são polarizados, como o eletrolítico. Inverter os pólos causará um curto e o componente pode até estourar. Uma seta, geralmente com um sinal de menos, indica qual o sentido da corrente.
 
 ## Diodo
 
