@@ -40,9 +40,23 @@ class SomeClass
 
 Nesse exemplo, a classe define um delegado e chama-o através de um método. O primeiro parâmetro não é passado para o método, mas é um atributo definido pelo construtor da classe.
 
+### Tipos genéricos
+
+Para evitar que seja necessário criar um novo tipo para cada delegado, o .Net contém algumas classes genéricas. São as classes [Action](https://docs.microsoft.com/pt-br/dotnet/api/system.action), [Func\<TResult>](https://docs.microsoft.com/pt-br/dotnet/api/system.func-1) e [Predicate\<T>](https://docs.microsoft.com/pt-br/dotnet/api/system.predicate-1). Essas classes representam, respectivamente, um método que não retorna nada, um método que retorna  `TResult`, e um predicado, ou seja, um método que retorna um booleano.
+
+Todas as classes podem receber até 16 tipos para definir os parâmetros do método. No caso da classe `Func`, o tipo do retorno será o último parâmetro informado.
+
+```csharp
+public Func<string>() MethodA;
+public Func<int, string>() MethodA;
+public Func<int, bool, string>() MethodA;
+```
+
 ## Delegados nulos
 
-O delegado deve ter sido atribuído ou a chamada irá lançar uma `NullReferenceException`. Para contornar isso de forma silenciosa (sem tratar a exceção), usa-se o operador condicional nulo (`?.`) junto com o método `Invoke()`.
+O delegado deve ter sido atribuído ou a chamada irá lançar uma `NullReferenceException`.
+
+Para contornar isso de forma silenciosa (sem tratar a exceção), usa-se o operador condicional nulo (`?.`) junto com o método `Invoke()`.
 
 ```csharp
 public SomeMethod(int i)
@@ -73,7 +87,15 @@ void OtherMethod()
 
 Da mesma forma, pode-se remover o método do delegado usando o operado `-=`.
 
-Também pode-se definir usando uma expressão lambda, porém dessa forma o método não pode ser removido.
+Também pode-se definir usando um delegado anônimo ou uma expressão lambda, porém dessa forma o método não pode ser removido.
+
+```csharp
+void OtherMethod()
+{
+    var someClass = new SomeClass("someName");
+    someClass.someDelegate += delegate(string str, int i) { Console.WriteLine($"{str}: {i}"); };
+}
+```
 
 ```csharp
 void OtherMethod()
