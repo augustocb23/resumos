@@ -8,4 +8,5 @@ Se tiver qualquer sugestão e/ou se encontrar algum erro, abre uma PR 😀
 ## Tópicos
 
 - [Arduino](arduino/README.md)
+- [C#](c-sharp/README.md)
 - [WPF (Windows Presentation Fundation)](wpf/README.md)
