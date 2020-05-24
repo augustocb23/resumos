@@ -4,3 +4,4 @@
 [Documentação](https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/language-specification/introduction)
 
 - [Delegados](delegates.md)
+- [Eventos](events.md)
